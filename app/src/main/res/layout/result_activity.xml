@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/details_btn_text"
+            android:id="@+id/details_button"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/map_btn_text"
+            android:id="@+id/map_button"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/fbBtn"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:src="@drawable/fb_icon"
+            android:scaleType="centerCrop"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/fb_btn_text" />
+    </GridLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/summ_image"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/summ_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/summ_text"
+            android:layout_below="@+id/summ_image"
+            android:layout_centerHorizontal="true"
+            android:textSize="22sp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/temperature"
+            android:layout_below="@+id/summ_text"
+            android:layout_centerHorizontal="true"
+            android:textSize="40sp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/temp_low_high"
+            android:layout_below="@+id/temperature"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sup"
+            android:layout_alignTop="@+id/temperature"
+            android:layout_toRightOf="@+id/temperature"
+            android:layout_toEndOf="@+id/temperature"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingTop="7dp" />
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/precip_label"
+                android:layout_column="1"
+                android:text="@string/precip_text"
+                android:textSize="18sp"
+                android:textColor="#505050" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/precip_val"
+                android:layout_column="2"
+                android:layout_marginLeft="65dp"
+                android:layout_gravity="right"
+                android:textColor="#505050" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rain_text"
+                android:id="@+id/rain_label"
+                android:layout_column="1"
+                android:textSize="18sp"
+                android:textColor="#505050" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rain_val"
+                android:layout_column="2"
+                android:layout_marginLeft="65dp"
+                android:layout_gravity="right"
+                android:textColor="#505050" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wind_text"
+                android:id="@+id/wind_label"
+                android:layout_column="1"
+                android:textSize="18sp"
+                android:textColor="#505050" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wind_val"
+                android:layout_column="2"
+                android:layout_marginLeft="65dp"
+                android:layout_gravity="right"
+                android:textColor="#505050" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dew_text"
+                android:id="@+id/dew_label"
+                android:layout_column="1"
+                android:textSize="18sp"
+                android:textColor="#505050" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dew_val"
+                android:layout_column="2"
+                android:layout_marginLeft="65dp"
+                android:layout_gravity="right"
+                android:textColor="#505050" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/humid_text"
+                android:id="@+id/humid_label"
+                android:layout_column="1"
+                android:textSize="18sp"
+                android:textColor="#505050" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/humid_val"
+                android:layout_column="2"
+                android:layout_marginLeft="65dp"
+                android:layout_gravity="right"
+                android:textColor="#505050" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vis_text"
+                android:id="@+id/vis_label"
+                android:layout_column="1"
+                android:textSize="18sp"
+                android:textColor="#505050" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/vis_val"
+                android:layout_column="2"
+                android:layout_marginLeft="65dp"
+                android:layout_gravity="right"
+                android:textColor="#505050" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sunrise_text"
+                android:id="@+id/sunrise_label"
+                android:layout_column="1"
+                android:textSize="18sp"
+                android:textColor="#505050" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sunrise_val"
+                android:layout_column="2"
+                android:layout_marginLeft="65dp"
+                android:layout_gravity="right"
+                android:textColor="#505050" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sunset_text"
+                android:id="@+id/sunset_label"
+                android:layout_column="1"
+                android:textSize="18sp"
+                android:textColor="#505050" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sunset_val"
+                android:layout_column="2"
+                android:layout_marginLeft="65dp"
+                android:layout_gravity="right"
+                android:textColor="#505050" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
+    </ScrollView>

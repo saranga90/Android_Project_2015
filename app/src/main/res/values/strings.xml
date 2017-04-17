@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">Forecast</string>
+    <string name="top_text">Forecast Search</string>
+    <string name="side_label1">Street</string>
+    <string name="side_label2">City</string>
+    <string name="side_label3">State</string>
+    <string name="side_label4">Degree</string>
+    <string name="radio_label1">Fahrenheit</string>
+    <string name="radio_label2">Celsius</string>
+    <string name="search_button_text">SEARCH</string>
+    <string name="clear_button_text">CLEAR</string>
+    <string name="Alabama">AL</string>
+    <string name="Alaska">AK</string>
+    <string name="Arizona">AZ</string>
+    <string name="Arkansas">AR</string>
+    <string name="California">CA</string>
+    <string name="Colorado">CO</string>
+    <string name="Connecticut">CT</string>
+    <string name="Delaware">DE</string>
+    <string name="District_Of_Columbia">DC</string>
+    <string name="Florida">FL</string>
+    <string name="Georgia">GA</string>
+    <string name="Hawaii">HI</string>
+    <string name="Idaho">ID</string>
+    <string name="Illinois">IL</string>
+    <string name="Indiana">IN</string>
+    <string name="Iowa">IA</string>
+    <string name="Kansas">KS</string>
+    <string name="Kentucky">KY</string>
+    <string name="Louisiana">LA</string>
+    <string name="Maine">ME</string>
+    <string name="Maryland">MD</string>
+    <string name="Massachusetts">MA</string>
+    <string name="Michigan">MI</string>
+    <string name="Minnesota">MN</string>
+    <string name="Mississippi">MS</string>
+    <string name="Missouri">MO</string>
+    <string name="Montana">MT</string>
+    <string name="Nebraska">NE</string>
+    <string name="Nevada">NV</string>
+    <string name="New_Hampshire">NH</string>
+    <string name="New_Jersey">NJ</string>
+    <string name="New_Mexico">NM</string>
+    <string name="New_York">NY</string>
+    <string name="North_Carolina">NC</string>
+    <string name="North_Dakota">ND</string>
+    <string name="Ohio">OH</string>
+    <string name="Oklahoma">OK</string>
+    <string name="Oregon">OR</string>
+    <string name="Pennsylvania">PA</string>
+    <string name="Rhode_Island">RI</string>
+    <string name="South_Carolina">SC</string>
+    <string name="South_Dakota">SD</string>
+    <string name="Tennessee">TN</string>
+    <string name="Texas">TX</string>
+    <string name="Utah">UT</string>
+    <string name="Vermont">VT</string>
+    <string name="Virginia">VA</string>
+    <string name="Washington">WA</string>
+    <string name="West_Virginia">WV</string>
+    <string name="Wisconsin">WI</string>
+    <string name="Wyoming">WY</string>
+    <string name="Default">Select</string>
+    <string name="top_label">Forecast Search</string>
+    <string name="alert_message"><![CDATA[<Message goes here>]]></string>
+    <string name="abt_button_text">About</string>
+    <string name="Disc_text">Powered By:</string>
+    <string name="disc_image_desc">disc_img</string>
+    <string name="details_btn_text">MORE DETAILS</string>
+    <string name="map_btn_text">VIEW MAP</string>
+    <string name="fb_btn_text">fb_button</string>
+    <string name="result_text"><![CDATA[<result>]]></string>
+    <string name="precip_text">Precipitation</string>
+    <string name="rain_text">Chance of Rain</string>
+    <string name="wind_text">Wind Speed</string>
+    <string name="dew_text">Dew Point</string>
+    <string name="humid_text">Humidity</string>
+    <string name="vis_text">Visibility</string>
+    <string name="sunrise_text">Sunrise</string>
+    <string name="sunset_text">Sunset</string>
+    <string name="disp_pic">dp</string>
+    <string name="summ_icon">summ_icon</string>
+    <string name="detailsText">detailsText</string>
+    <string name="next24btn">NEXT 24 HOURS</string>
+    <string name="next7btn">NEXT 7 DAYS</string>
+    <string-array name="state_array">
+        <item>@string/Default</item>
+        <item>@string/Alabama</item>
+        <item>@string/Alaska</item>
+        <item>@string/Arizona</item>
+        <item>@string/Arkansas</item>
+        <item>@string/California</item>
+        <item>@string/Colorado</item>
+        <item>@string/Connecticut</item>
+        <item>@string/Delaware</item>
+        <item>@string/District_Of_Columbia</item>
+        <item>@string/Florida</item>
+        <item>@string/Georgia</item>
+        <item>@string/Hawaii</item>
+        <item>@string/Idaho</item>
+        <item>@string/Illinois</item>
+        <item>@string/Indiana</item>
+        <item>@string/Iowa</item>
+        <item>@string/Kansas</item>
+        <item>@string/Kentucky</item>
+        <item>@string/Louisiana</item>
+        <item>@string/Maine</item>
+        <item>@string/Maryland</item>
+        <item>@string/Massachusetts</item>
+        <item>@string/Michigan</item>
+        <item>@string/Minnesota</item>
+        <item>@string/Mississippi</item>
+        <item>@string/Missouri</item>
+        <item>@string/Montana</item>
+        <item>@string/Nebraska</item>
+        <item>@string/Nevada</item>
+        <item>@string/New_Hampshire</item>
+        <item>@string/New_Jersey</item>
+        <item>@string/New_Mexico</item>
+        <item>@string/New_York</item>
+        <item>@string/North_Carolina</item>
+        <item>@string/North_Dakota</item>
+        <item>@string/Ohio</item>
+        <item>@string/Oklahoma</item>
+        <item>@string/Oregon</item>
+        <item>@string/Pennsylvania</item>
+        <item>@string/Rhode_Island</item>
+        <item>@string/South_Carolina</item>
+        <item>@string/South_Dakota</item>
+        <item>@string/Tennessee</item>
+        <item>@string/Texas</item>
+        <item>@string/Utah</item>
+        <item>@string/Vermont</item>
+        <item>@string/Virginia</item>
+        <item>@string/Washington</item>
+        <item>@string/West_Virginia</item>
+        <item>@string/Wisconsin</item>
+        <item>@string/Wyoming</item>
+    </string-array>
+    <string name="aeris_client_id">I1M1jzKeV3QZudPdqLQhG</string>
+    <string name="aeris_client_secret">tkXNFyr2tV6GtfhsAE4yra0bqQhZArg4HMUo6FEz</string>
+    <string name="facebook_app_id">982947641778277</string>
+    <string name="title_activity_facebook">Facebook</string>
+</resources>

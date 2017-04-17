@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/moreDetails"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:singleLine="false"
+                android:textSize="22sp" />
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:text="@string/next24btn"
+                android:id="@+id/next24_button"
+                android:layout_marginTop="26dp"
+                android:textSize="14sp"
+                android:layout_below="@+id/moreDetails"
+                android:layout_alignLeft="@+id/moreDetails"
+                android:layout_alignStart="@+id/moreDetails" />
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:text="@string/next7btn"
+                android:id="@+id/next7_button"
+                android:textSize="14sp"
+                android:layout_alignTop="@+id/next24_button"
+                android:layout_toRightOf="@+id/next24_button"
+                android:layout_toEndOf="@+id/next24_button"
+                android:layout_marginLeft="5dp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/next24_button"
+                android:layout_marginTop="33dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/maintable"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/next24_button"
+                android:layout_marginTop="33dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/maintable2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:stretchColumns="0,1">
+            </TableLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
